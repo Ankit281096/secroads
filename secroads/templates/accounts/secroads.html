@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'accounts/stylesecroads.css'%}">
+
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url("{%static 'accounts/wallpaper.jpg'%}") center / cover;
+
+}
+
+</style>
+</head>
+
+<body>
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout"> 
+	<button class="button" style="vertical-align:middle"><span><a href="{% static 'accounts/department.html'%}">Click Here To Board <i class="fa fa-train"></i></a></span></button>
+	</div>
+
+
+</body>
+</html>

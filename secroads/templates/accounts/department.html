@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Department</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'accounts/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{%static 'accounts/owl.theme.default.min.css'%}">
+
+    <style>
+        body
+        {
+            font-family: 'Alegreya';
+        }
+
+        .header_container {
+            background-color: #ffd3b6;
+            margin: 0px auto;
+        }
+
+
+
+        #g
+        {
+            height:100px;
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: -7px 7px 5px #888888;
+        }
+        #h
+        {
+            height:100px;
+            width:400px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: -7px 7px 5px #888888;
+        }
+        #k
+        {
+            height:100px;
+            width: 800px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: -7px 7px 5px #888888;
+        }
+        @media screen and (max-width:1363px)
+        {
+            #k
+            {
+                width: 100%;
+                margin-right: 0px;
+            }
+        }
+        @media screen and (max-width:558px)
+        {
+            .header_container
+            {
+                width:100%;
+            }
+            #h
+            {
+                width: 100%;
+            }
+            #k
+            {
+                width: 100%;
+            }
+            #g
+            {
+                width: 100%;
+                height:300px;
+                margin-left: 0;
+            }
+        }
+
+        .navbar
+        {
+            background-color: #89ecda ;
+            height: 810px;
+            left: 0;
+        }
+
+        .navbar_header
+        {
+            padding: 10px 50px;
+            background-color: #3bd6c6;
+        }
+        .navbar_header a
+        {
+            text-decoration: none;
+            font-size: 24px;
+            color: white;
+        }
+
+        .navbar_content ul
+        {
+            padding-left:0px;
+            width:400px;
+        }
+        .navbar_content ul li
+        {
+            display: block;
+            width: 290px;
+            padding: 10px;
+            border-style: inset;
+            border-color:#005b96;
+
+        }
+        .navbar_content ul li a
+        {
+            height: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .image_container
+        {
+            height:50px;
+            width:250px;
+            background-color:black;
+            opacity:0.8;
+            color:white;
+            margin-top:-76px;
+        }
+
+        .image_container h2
+        {
+            padding-top:10px;
+            font-size:25px;
+            font-family:'Alegreya';
+        }
+
+        .item img
+        {
+            max-width: 100%;
+
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .item img:hover
+        {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="header_container" >
+
+    <img src="{% static 'accounts/mainlogo.png'%}" id="g">
+
+
+    <img src="{% static 'accounts/secrlogo.jpg'%}" id="h" >
+
+
+
+    <img src="{% static 'accounts/bspdivision1.png'%}" id="k" >
+
+
+</div>
+
+
+
+
+
+
+<div class="container" style="background-color:#bae1ff;  height:5800px; margin:0px; padding:0; width:1348px;">
+    <div class="row" style="margin: 0px;">
+    <div class="col-sm-3" style="padding: 0; width: 292px;">
+    <div class="navbar">
+        <div class="navbar_header">
+            <a href="department.html"><b>DEPARTMENT</b></a>
+        </div>
+        <div class="navbar_content">
+            <ul>
+                <li><a href="#mechanical">Mechanical</a></li>
+                <li><a href="#audit">Audit</a></li>
+                <li><a href="#electrical">Electrical</a></li>
+                <li><a href="#engineering">Engineering</a></li>
+                <li><a href="#commercial">Commercial</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#s&t">Signal &amp; Telecommunication</a></li>
+                <li><a href="#medical">Medical</a></li>
+                <li><a href="#operating">Operating</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#general_administration">General Administration</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!-- ***********************************************************************************************************
+    ****************************************************************************************************************
+    ****************************************************************************************************************
+    ****************************MECHANICAL**************************************************************************-->
+    <div class="col-sm-9">
+        <section id="mechanical">
+    <h2 style="margin-left: 35px;">MECHANICAL</h2>
+    <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#fe5757; ">
+        </div>
+    </div>
+        <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+            <div class="item">
+                    <a href="login.html" style="text-decoration: none;"><img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                    <center><h2>CME </h2></center>
+                    </div></a>
+                </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>CME(Plg&WS)</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>CRSE</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>CMPE</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>Dy.CME(Plg&WS)</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>Dy.CME(DSL)</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>Dy.CME(FRT)</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>Dy.CME(C&W)</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>AEME(Plg)</h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2>AEME(chg)</h2></center>
+                </div>
+            </div>
+
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************AUDIT**************************************************************************-->
+    <section id="audit">
+        <h2 style="margin-left: 35px;">AUDIT</h2>
+        <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#fe8181; ">
+            </div>
+        </div>
+
+
+        <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+
+
+            <div class="item">
+
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2> </h2></center>
+                </div>
+
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2> </h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                <div class="image_container">
+                    <center><h2></h2></center>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************ELECTRICAL**************************************************************************-->
+        <section id="electrical">
+            <h2 style="margin-left: 35px;">ELECTRICAL</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#9afe2e; ">
+                </div>
+            </div>
+                <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                    <div class="item">
+                        <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CEE</h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CELE</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CEGE</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CEDE</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>Dy.CEE(Gen.TRD)</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>Dy.CEE(HQ-II)</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************ENGINEERING**************************************************************************-->
+        <section id="engineering">
+            <h2 style="margin-left: 35px;">ENGINEERING</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+        <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+            <div class="item">
+                <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************COMMERCIAL**************************************************************************-->
+        <section id="commercial">
+            <h2 style="margin-left: 35px;">COMMERCIAL</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#f9d62e; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CCM </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CCM-PS</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>CCM-FS&CL</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>Dy.CCM-FS&Claim </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>Dy.CCM-PM</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>Dy.CCM(HQ)</h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2>SCM(HQ)</h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************FINANCE**************************************************************************-->
+        <section id="finance">
+            <h2 style="margin-left: 35px;">FINANCE</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************S&T**************************************************************************-->
+        <section id="s&t">
+            <h2 style="margin-left: 35px;">SIGNAL and TELECOMMUNICATION</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************MEDICAL**************************************************************************-->
+        <section id="medical">
+            <h2 style="margin-left: 35px;">MEDICAL</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************OPERATING**************************************************************************-->
+        <section id="operating">
+            <h2 style="margin-left: 35px;">OPERATING</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************SAFETY**************************************************************************-->
+        <section id="safety">
+            <h2 style="margin-left: 35px;">SAFETY</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************SECURITY*************************************************************************-->
+        <section id="security">
+            <h2 style="margin-left: 35px;">SECURITY</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************STORE**************************************************************************-->
+        <section id="store">
+            <h2 style="margin-left: 35px;">STORE</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************PERSONAL**************************************************************************-->
+        <section id="personal">
+            <h2 style="margin-left: 35px;">PERSONAL</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+                <div class="item">
+
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***********************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************GENERAL ADMINISTRATION**************************************************************************-->
+        <section id="general_administration">
+            <h2 style="margin-left: 35px;">GENERAL ADMINISTRATION</h2>
+            <div class="progress" style="height:5px; width:950px; margin-left: 35px;">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:15%; height:5px; background-color:#43845E; ">
+                </div>
+            </div>
+
+
+            <div class="owl-carousel owl-theme " style="width: 1000px; margin-left: 40px;">
+
+
+                <div class="item">
+
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2> </h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://www.vvit.org/images/placeholder.jpg" style="z-index: -1; width:250px; height:250px;">
+                    <div class="image_container">
+                        <center><h2></h2></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                nav:true,
+                items:3,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:2500,
+                autoplayHoverPause:false
+            })
+        });
+    </script>
+
+
+</div>
+
+</body>
+<footer>
+    <script src="{% static 'accounts/jquery.min.js'%}"></script>
+    <script src="{% static 'accounts/owl.carousel.min.js'%}"></script>
+</footer>
+</html>
